@@ -1,0 +1,10 @@
+<phpunit colors="true" bootstrap="tests/base/bootstrap.php">
+    <testsuites>
+        <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <includePath>vendor/google/appengine-php-sdk</includePath>
+    </php>
+</phpunit>

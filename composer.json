@@ -1,0 +1,37 @@
+{
+  "name": "mijohansen/php-gae-utility",
+  "description": "Utility belt for common tasks in Google App Engine for PHP.",
+  "type": "library",
+  "version": "0.7.7",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Michael Johansen",
+      "email": "michael.johansen@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "google/apiclient": "v2.*",
+    "tomwalder/php-gds": "v4.*",
+    "hassankhan/config": "v1.*",
+    "google/appengine-php-sdk": "v1.*",
+    "monolog/monolog": "v1.*",
+    "google/cloud-storage": "v1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "GaeUtil\\": "src"
+    }
+  },
+  "require-dev": {
+    "php": ">=5.5",
+    "phpunit/phpunit": "^7"
+  },
+  "scripts": {
+    "test": "$(gcloud beta emulators datastore env-init); phpunit",
+    "test1": "$(gcloud beta emulators datastore env-init); phpunit tests/UtilTest.php"
+  }
+}
