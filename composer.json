@@ -1,5 +1,5 @@
 {
-  "name": "mijohansen/php-gae-utility",
+  "name": "asimtariq/php-gae-utility",
   "description": "Utility belt for common tasks in Google App Engine for PHP.",
   "type": "library",
   "version": "0.7.7",
